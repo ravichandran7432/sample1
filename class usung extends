@@ -1,1 +1,17 @@
-
+class sample {
+    void method1() {
+        System.out.println("Animal can eat");
+    }
+}
+class child extends sample {
+    void method2() {
+        System.out.println("Dog can bark");
+    }
+}
+public class main {
+    public static void main(String args[]) {
+        child obj = new child();
+        obj.method1();
+        obj.method2();
+    }
+}
