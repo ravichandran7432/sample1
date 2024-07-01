@@ -1,0 +1,25 @@
+public class Main{
+    public static void main(String args[]){
+        int n=28;
+        int[] a=new int[n];
+        a[0]=1;
+        a[1]=2;
+        a[2]=2;
+        int c=3,p=2;
+        for(int i=3;i<n;i++){
+            for(int j=0;j<a[i-1];j++){
+                a[++p]=i;
+                c++;
+                if(c==n){
+                    break;
+                }
+            }
+            if(c==n){
+                break;
+            }
+        }
+        for(int i:a){
+            System.out.print(i);
+        }
+    }
+}
